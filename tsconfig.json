@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES5",
+    "module": "CommonJS",
+    "lib": ["ES6"],
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "rootDir": "src",
+    "removeComments": true,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"]
+}

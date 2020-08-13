@@ -1,0 +1,24 @@
+{
+  "name": "ogen-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev-windows": "set NODE_ENV=development&& ts-node-dev src/app.ts",
+    "dev": "NODE_ENV=development ts-node-dev src/app.ts"
+  },
+  "keywords": [],
+  "author": "TigorLazuardi <tigor.hutasuhut@gmail.com> (https://github.com/TigorLazuardi)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.57"
+  }
+}
