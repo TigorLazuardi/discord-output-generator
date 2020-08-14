@@ -2,6 +2,10 @@ import fs from 'fs-extra'
 import run from './run_command'
 import genRandom from './gen_random'
 
+if (!fs.existsSync('run')) {
+  fs.mkdirSync('run')
+}
+
 const basePath = './run'
 
 export async function handleJavascript(content: string): Promise<string> {
