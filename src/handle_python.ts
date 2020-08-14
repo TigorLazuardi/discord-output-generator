@@ -17,7 +17,7 @@ export async function handlePython(content: string): Promise<string> {
   await fs.writeFile(path, code)
 
   try {
-    result = await run(3000, 'python', path)
+    result = await run(3000, 'python3', path)
   } catch (e) {
     result = e.message || 'Failed to run python'
   } finally {
